@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="dataspace-node3" id="1fff34b5-79b5-4d6f-8622-89a4d00a522a" port="22" nameFormat="DESCRIPTIVE" username="user" />
+    </configs>
+  </component>
+</project>

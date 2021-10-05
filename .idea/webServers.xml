@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="51bf8137-9744-4438-a6e3-f18b5a963f58" name="remote">
+        <fileTransfer rootFolder="/home/user" accessType="SFTP" host="dataspace-node3" port="22" sshConfigId="1fff34b5-79b5-4d6f-8622-89a4d00a522a" sshConfig="user@dataspace-node3:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
