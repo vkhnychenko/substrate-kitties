@@ -138,6 +138,7 @@ parameter_types! {
 	pub BlockLength: frame_system::limits::BlockLength = frame_system::limits::BlockLength
 		::max_with_normal_ratio(5 * 1024 * 1024, NORMAL_DISPATCH_RATIO);
 	pub const SS58Prefix: u8 = 42;
+	pub const MaxKittyOwned: u32 = 9999;
 }
 
 // Configure FRAME pallets to include in runtime.
@@ -266,9 +267,11 @@ impl pallet_sudo::Config for Runtime {
 }
 
 /// Configure the pallet-mykitties in pallets/mykitties.
-impl pallet_kitties::Config for Runtime {
+impl pallet_mykitties::Config for Runtime {
 	type Event = Event;
+	type Currency = Balances;
 	type KittyRandomness = RandomnessCollectiveFlip;
+	type MaxKittyOwned = MaxKittyOwned;
 }
 
 // Create the runtime by composing the FRAME pallets that were previously configured.
